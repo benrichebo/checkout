@@ -6,8 +6,8 @@ const imagemin = require('gulp-imagemin');
 
 const htmlmin = require('gulp-htmlmin');
 
-var cssmin = require('gulp-cssmin');
-var rename = require('gulp-rename');
+const cssmin = require('gulp-cssmin');
+const rename = require('gulp-rename');
 
 const babel = require('gulp-babel');
 
