@@ -1,12 +1,12 @@
-# Bootstap blog-theme re-design
+# Bootstap blog-template
 
-This is the repository for a redesign I did on the bootstrap blog theme
+This is the repository for a blog template.
 
 ![screenshot](https://github.com/benrichebo/blog/blob/master/dist/images/blog%20screencapture.png)
 
 ## Instructions
 
-This repository contains the design of the pages
+This repository contains the design of some blog components
 
 ## Installing
 
