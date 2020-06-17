@@ -2,6 +2,8 @@
 
 This is the repository for a redesign I did on the bootstrap blog theme
 
+![screenshot](https://github.com/benrichebo/blog/blob/master/dist/images/blog%20screencapture.png)
+
 ## Instructions
 
 This repository contains the design of the pages
