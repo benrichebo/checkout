@@ -38,11 +38,6 @@ function images(cb) {
 }
 
 function css(cb) {
-    src([`${origin}/css/*.css`])
-    .pipe(cssmin())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(dest(`${destination}/css`));
-
     src(`${origin}/css/style.scss`)
     .pipe(sass({
         outputStyle: 'compressed'
@@ -52,27 +47,9 @@ function css(cb) {
     cb();
 }
 
-function js(cb) {
-    src(`${origin}/js/*.js`)
-    .pipe(babel({
-        presets:['@babel/env']
-    }))
-    .pipe(concat('script.js'))
-    .pipe(dest(`${destination}/js`));
-    cb();
-}
-
-
-function fonts(cb) {
-    src(`${origin}/fonts/*`)
-    .pipe(dest(`${destination}/fonts`));
-    cb();
-}
-
 function watcher(cb) {
     watch(`${origin}/**/*.html`).on('change', series(html, browserSync.reload))
     watch(`${origin}/**/*.scss`).on('change', series(css, browserSync.reload))
-    watch(`${origin}/**/*.js`).on('change', series(js, browserSync.reload))
     watch(`${origin}/images/*`).on('change', series(images, browserSync.reload))
     cb();
 }
@@ -88,4 +65,4 @@ browserSync.init({
     cb();
 }
 
-exports.default = series(clean, parallel(html, css, js), fonts, images, server, watcher);
+exports.default = series(clean, parallel(html, css), images, server, watcher);
