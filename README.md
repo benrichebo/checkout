@@ -1,12 +1,12 @@
-# Bootstap blog-template
+# Checkout template
 
-This is the repository for a blog template.
+This is the repository for a checkout page requested by a company
 
-![screenshot](https://github.com/benrichebo/blog/blob/master/dist/images/blog%20screencapture.png)
+![screenshot](https://github.com/benrichebo/checkout/blob/master/dist/images/checkout.png)
 
 ## Instructions
 
-This repository contains the design of some blog components
+This repository contains the design of a checkuot page
 
 ## Installing
 
